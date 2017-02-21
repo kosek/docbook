@@ -161,7 +161,7 @@ div {
    db.funcdef =
       element funcdef {
          db.funcdef.attlist,
-         (db._text | db.type | db.function)*
+         (db._text | db.type | db.void | db.function)*
       }
 }
 
@@ -288,7 +288,7 @@ div {
    db.paramdef =
       element paramdef {
          db.paramdef.attlist,
-         (db._text | db.initializer | db.type | db.parameter | db.funcparams)*
+         (db._text | db.initializer | db.modifier | db.type | db.parameter | db.funcparams)*
       }
 }
 
